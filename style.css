@@ -32,7 +32,7 @@ body {
 }
 
 a {
-    color: var(--secondary-color);
+    color: var(--text-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -52,12 +52,12 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    color: var(blue);
+    color: var(--secondary-color);
 }
 
 h3 {
     font-size: 1.5rem;
-    color: var(green);
+    color: var(--secondary-color);
 }
 
 p {
@@ -72,16 +72,16 @@ header {
     padding: 2rem 0;
     position: sticky;
     top: 0;
-    background-color: var(black);
+    background-color: var(--background-color);
     z-index: 1000;
     border-bottom: 1px solid rgba(100, 255, 218, 0.1);
 }
 
 .logo {
-    font-family: var('Sofia');
+    font-family: var(--font-code);
     font-weight: bold;
     font-size: 1.5rem;
-    color: var(rgb(179, 52, 73));
+    color: var(--secondary-color);
 }
 
 nav ul {
@@ -94,13 +94,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(red);
+    color: var(--text-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: var(gray);
+    color: var(--secondary-color);
 }
 
 section {
@@ -117,7 +117,7 @@ section {
 }
 
 .hero h1 span {
-    color: var(rgb(0, 255, 234));
+    color: var(--secondary-color);
 }
 
 .hero p {
@@ -130,7 +130,7 @@ section {
     display: inline-block;
     background-color: transparent;
     color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
+    border: var(--secondary-color);
     border-radius: 4px;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
@@ -253,7 +253,7 @@ section {
 }
 
 .blog-post h3 {
-    color: var(--secondary-color);
+    color: rgba(100, 255, 218, 0.1);
 }
 
 .blog-post .date {
@@ -264,7 +264,8 @@ section {
 
 /* Testimonials Section */
 .testimonial {
-    background-color: var(--section-bg-color);
+    background-color: rgba(100, 255, 218, 0.1);
+;
     padding: 2rem;
     border-radius: 5px;
     margin-top: 2rem;
@@ -273,7 +274,7 @@ section {
 
 .testimonial::before {
     font-size: 4rem;
-    color: var(--secondary-color);
+    color: rgba(100, 255, 218, 0.1);
     opacity: 0.2;
     position: absolute;
     top: 10px;
@@ -309,12 +310,11 @@ section {
 .form-group textarea {
     width: 100%;
     padding: 0.75rem;
-    background-color: var(--section-bg-color);
-    border: 1px solid rgba(100, 255, 218, 0.3);
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
     border-radius: 4px;
-    color: var(--text-color);
-    font-family: var(--font-main);
-}
+    color:  var(--secondary-color);
+    font-family: var(--font-code);
 
 .form-group textarea {
     min-height: 150px;
@@ -344,13 +344,13 @@ section {
 }
 
 .social-link {
-    color: var(--text-color);
+    color: var(green);
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
 .social-link:hover {
-    color: var(--secondary-color);
+    color: var(yellow);
 }
 
 /* Footer */
@@ -405,7 +405,7 @@ footer {
 /* Print Styles */
 @media print {
     body {
-        background-color: white;
+        background-color: rgb(13, 134, 150);
         color: black;
     }
     
